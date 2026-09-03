@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cybercognition"
+version = "0.1.0"
+description = "Minimal falsifiable kernel for cognitive-computer architecture: NeuralState, CybercognitiveState, DeterministicState separation"
+requires-python = ">=3.9"
+authors = [{name = "Meester-Mus"}]
+license = {text = "MIT"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "-v --tb=short"
